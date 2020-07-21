@@ -1,0 +1,20 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title>时间显示器</title>  
+</head> 
+<body>
+    <script type="text/javascript"> 
+        var nowTime ;
+        function play(){
+        var time = new Date();
+        nowTime = time.getFullYear()+"年"+time.getMonth()+"月"+time.getDate()+"日"+time.getHours()+"时"+time.getMinutes()+"分"+time.getSeconds()+"秒";
+        document.getElementById("d").innerHTML = nowTime;
+        }
+        setInterval(play,1000);
+    </script> 
+当前时间:<span id="d"></span>   
+<a href="/index.html">返回主页
+</body> 
+</html>
